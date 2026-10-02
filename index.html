@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Carousel Login & Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="glow-bg"></div>
+
+  <!-- 3D Carousel Background -->
+  <div class="carousel-container">
+    <div class="carousel-spinner">
+      <div class="carousel-card">
+        <div class="card-title">First Line of Code</div>
+        <div class="card-code">console.log("Hello, World!");</div>
+      </div>
+      <div class="carousel-card">
+        <div class="card-title">Debugging Matrix</div>
+        <div class="card-code">const fix = (err) =&gt; solve(err);</div>
+      </div>
+      <div class="carousel-card">
+        <div class="card-title">Algorithm Library</div>
+        <div class="card-code">sort(data.begin(), data.end());</div>
+      </div>
+      <div class="carousel-card">
+        <div class="card-title">Abstract Void</div>
+        <div class="card-code">type Nullable&lt;T&gt; = T | null;</div>
+      </div>
+      <div class="carousel-card">
+        <div class="card-title">Cyber Sync</div>
+        <div class="card-code">await fetch('/api/v1/sync');</div>
+      </div>
+      <div class="carousel-card">
+        <div class="card-title">Quantum State</div>
+        <div class="card-code">return state ? true : false;</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Authentication Form Box -->
+  <div class="auth-wrapper">
+    <!-- LOGIN FORM -->
+    <form id="loginForm" class="form-container" onsubmit="event.preventDefault(); alert('Login Successful!');">
+      <h2 class="form-title">Welcome Back</h2>
+      <p class="form-subtitle">Enter your credentials to continue</p>
+      
+      <div class="input-group">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" placeholder="name@example.com" required>
+      </div>
+
+      <div class="input-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" placeholder="••••••••" required>
+      </div>
+
+      <button type="submit" class="btn-submit">Sign In</button>
+
+      <p class="toggle-text">
+        Don't have an account? 
+        <a id="toRegister">Register</a>
+      </p>
+    </form>
+
+    <!-- REGISTER FORM -->
+    <form id="registerForm" class="form-container hidden" onsubmit="event.preventDefault(); alert('Registration Successful!');">
+      <h2 class="form-title">Create Account</h2>
+      <p class="form-subtitle">Join us and start your journey</p>
+      
+      <div class="input-group">
+        <label for="reg-name">Full Name</label>
+        <input type="text" id="reg-name" placeholder="John Doe" required>
+      </div>
+
+      <div class="input-group">
+        <label for="reg-email">Email</label>
+        <input type="email" id="reg-email" placeholder="name@example.com" required>
+      </div>
+
+      <div class="input-group">
+        <label for="reg-password">Password</label>
+        <input type="password" id="reg-password" placeholder="••••••••" required>
+      </div>
+
+      <button type="submit" class="btn-submit">Register</button>
+
+      <p class="toggle-text">
+        Already have an account? 
+        <a id="toLogin">Sign In</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
